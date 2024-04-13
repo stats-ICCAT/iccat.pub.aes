@@ -1,0 +1,26 @@
+{
+    "id": "691CB33C",
+    "path": "D:/Git workspaces/ICCAT/libs/iccat.pub.aes/man/REF_GEAR_GROUPS_COLORS.Rd",
+    "project_path": "man/REF_GEAR_GROUPS_COLORS.Rd",
+    "type": "r_doc",
+    "hash": "3232122492",
+    "contents": "",
+    "dirty": false,
+    "created": 1712840201632.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1712839818,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1712839818,
+    "read_only": true,
+    "read_only_alternatives": [
+        "R/data.R"
+    ]
+}
