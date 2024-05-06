@@ -6,17 +6,19 @@ library(RColorBrewer)
 library(Polychrome)
 
 ### Gear groups
-REF_GEAR_GROUPS_COLORS = brewer.pal(n = 9, name = "Set1")
-REF_GEAR_GROUPS_COLORS = colorRampPalette(REF_GEAR_GROUPS_COLORS)(length(REF_GEAR_GROUPS$CODE))
-#REF_GEAR_GROUPS_COLORS = glasbey.colors(length(REF_GEAR_GROUPS$CODE))
+#REF_GEAR_GROUPS_COLORS = brewer.pal(n = 9, name = "Set1")
+#REF_GEAR_GROUPS_COLORS = colorRampPalette(REF_GEAR_GROUPS_COLORS)(length(REF_GEAR_GROUPS$CODE))
 
 REF_GEAR_GROUPS_COLORS =
   data.table(
     GEAR_GROUP_CODE = REF_GEAR_GROUPS$CODE,
-    FILL            = REF_GEAR_GROUPS_COLORS[1:nrow(REF_GEAR_GROUPS)]
+    #FILL            = REF_GEAR_GROUPS_COLORS[1:nrow(REF_GEAR_GROUPS)],
+    FILL            = NA_character_
   )
 
-REF_GEAR_GROUPS_COLORS[GEAR_GROUP_CODE == "OT", FILL := "#111111"]
+REF_GEAR_GROUPS_COLORS[!GEAR_GROUP_CODE %in% c("UN", "OT"), FILL := colorRampPalette(brewer.pal(n = 12, name = "Paired"))(length(REF_GEAR_GROUPS$CODE) - 2)]
+REF_GEAR_GROUPS_COLORS[GEAR_GROUP_CODE == "UN", FILL := "#888888"]
+REF_GEAR_GROUPS_COLORS[GEAR_GROUP_CODE == "OT", FILL := "#222222"]
 
 REF_GEAR_GROUPS_COLORS$GEAR_GROUP_CODE =
   factor(
