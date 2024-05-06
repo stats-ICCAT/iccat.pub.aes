@@ -15,6 +15,6 @@
 REF_GEAR_GROUPS_COLORS
 }
 \description{
-The reference gear groups colors
+Includes color definitions for the 'synthetic' OT gear group
 }
 \keyword{datasets}
