@@ -11,6 +11,7 @@ Encoding: UTF-8
 LazyData: true
 Depends: 
     iccat.pub.data,
+    data.table,
     colorspace,
     RColorBrewer,
     R (>= 2.10)
