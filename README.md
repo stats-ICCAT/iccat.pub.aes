@@ -4,9 +4,9 @@ A set of reference data constants - and the code to build them - meant for publi
 
 The included reference data provides standard colors for the following categories:
 
--   [gear groups](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data/REF_GEAR_GROUPS.RData)
--   [species' gear groups]() (as used by the CATDIS maps)
--   [catch types]()
+-   [gear groups](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/REF_GEAR_GROUPS_COLORS.rda)
+-   [species' gear groups](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/REF_SPECIES_GEAR_GROUPS_COLORS.rda) (as used by the CATDIS maps)
+-   [catch types](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/REF_CATCH_TYPES_COLORS.rda)
 
 # External dependencies (CRAN)
 
