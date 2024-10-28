@@ -1,16 +1,11 @@
 library(iccat.pub.data)
 library(colorspace)
 library(RColorBrewer)
-library(Polychrome)
 
 ### Gear groups
-#REF_GEAR_GROUPS_COLORS = brewer.pal(n = 9, name = "Set1")
-#REF_GEAR_GROUPS_COLORS = colorRampPalette(REF_GEAR_GROUPS_COLORS)(length(REF_GEAR_GROUPS$CODE))
-
 REF_GEAR_GROUPS_COLORS =
   data.table(
     GEAR_GROUP_CODE = REF_GEAR_GROUPS$CODE,
-    #FILL            = REF_GEAR_GROUPS_COLORS[1:nrow(REF_GEAR_GROUPS)],
     FILL            = NA_character_
   )
 

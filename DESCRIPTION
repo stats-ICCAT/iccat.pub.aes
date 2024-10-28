@@ -1,11 +1,11 @@
 Package: iccat.pub.aes
 Type: Package
-Title: TBD
+Title: ICCAT public aesthetics libraries
 Version: 0.1.0
 Author: ICCAT Secretariat
 Maintainer: Fabio Fiorellato <fabio.fiorellato@iccat.int>
-Description: TBD
-    TBD.
+Description: A set of reference data constants meant for public usage and modeling the core ICCAT aesthetics.
+    For the time being it includes reference data for the aesthetics related to gear groups, species' gear groups, and catch types.
 License: TBD
 Encoding: UTF-8
 LazyData: true
@@ -13,6 +13,5 @@ Depends:
     iccat.pub.data,
     data.table,
     colorspace,
-    RColorBrewer,
-    R (>= 2.10)
+    RColorBrewer
 RoxygenNote: 7.3.1
