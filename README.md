@@ -4,7 +4,7 @@ A set of reference data constants - and the code to build them - meant for publi
 
 The included reference data provides standard colors for the following categories:
 
--   [gear groups]()
+-   [gear groups](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data/REF_GEAR_GROUPS.RData)
 -   [species' gear groups]() (as used by the CATDIS maps)
 -   [catch types]()
 
@@ -20,9 +20,9 @@ The included reference data provides standard colors for the following categorie
 
 # How to update
 
-If needed, the reference data shall be updated by executing the [`initialize_reference_data_aesthetics.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data-raw/initialize_reference_data_aesthetics.R) script (currently stored under the standard `data-raw` folder).
+If needed, the reference data shall be updated by executing the [`initialize_reference_data_aesthetics.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data-raw/initialize_reference_data_aesthetics.R) script (currently stored under the standard [`data-raw`](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data-raw) folder).
 
-After the new reference data have been created and placed under the `data` folder, the [`data.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/data.R) script **must** be updated to properly document the additions and ensure these are exported by the library.
+After the new reference data have been created and placed under the [`data`](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data) folder, the [`data.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/data.R) script **must** be updated to properly document the additions and ensure these are exported by the library.
 
 # Future extensions
 
