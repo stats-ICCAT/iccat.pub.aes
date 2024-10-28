@@ -22,7 +22,7 @@ The included reference data provides standard colors for the following categorie
 
 If needed, the reference data shall be updated by executing the [`initialize_reference_data_aesthetics.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data-raw/initialize_reference_data_aesthetics.R) script (currently stored under the standard `data-raw` folder).
 
-After the new reference data have been created and placed under the `data` folder, the `data.R` script **must** be updated to properly document the additions and ensure these are exported by the library.
+After the new reference data have been created and placed under the `data` folder, the [`data.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/data.R) script **must** be updated to properly document the additions and ensure these are exported by the library.
 
 # Future extensions
 
