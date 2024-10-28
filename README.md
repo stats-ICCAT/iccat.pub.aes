@@ -14,7 +14,7 @@ The format of each color table is as follows:
 |-------------------------------|---------|-------|
 |*alphanumeric code*            |*RGB color*|*RGB color*|
 
-Where the *dataset-dependent code column* name depends from the specific type of reference data (e.g., `CATCH_TYPE_CODE` for catch types, or `GEAR_GROUP_CODE` for gear groups). 
+Where the *dataset-dependent code column* name changes with the specific type of reference data (e.g., `CATCH_TYPE_CODE` for catch types, or `GEAR_GROUP_CODE` for gear groups). 
 
 Also, the *alphanumeric code* value depends on the valid entries expected for the specific type of reference date, while `FILL` and `COLOR` values correspond to the RGB colors for the two different types of aesthetics.
 
@@ -54,4 +54,6 @@ After the new reference data have been created and placed under the [`data`](htt
 
 # Future extensions
 
-The library should be extended to also include reference data colors for the **school types**, which are now embedded in the other libraries / apps that require them. 
++ The *dataset-dependent code column* should instead be made uniform (e.g., `CODE`) across all different reference datasets. This will require changing the code of all other dependent libraries and apps using the default aesthetics. 
++ The library should be extended to also include reference data colors for the **school types**, which are now embedded in the other libraries / apps that require them. 
+ 
