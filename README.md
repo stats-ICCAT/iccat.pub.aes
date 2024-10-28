@@ -25,12 +25,16 @@ Example from the [catch types](https://github.com/stats-ICCAT/iccat.pub.aes/blob
 |CATCH_TYPE_CODE|FILL   |COLOR  |
 |---------------|-------|-------|
 |C              |#66C2A5|#3C856F|
-|FA             |#E99073|#B15932|
+|FA             |#B15932|#B15932|
 |L              |#AB98C8|#796497|
 |LF             |#C6B18B|#8B7850|
 |DD             |#E1D83B|#999203|
 |DL             |#E9C783|#A98504|
 |DM             |#B3B3B3|#7A7A7A|
+
+Example of results using the *catch type* aesthetics (from the [T1NC dashboard](https://iccat.shinyapps.io/T1NC_dashboard) app:
+
+![image](https://github.com/user-attachments/assets/91fec789-eb57-4e75-b74c-48153d53799a)
 
 # External dependencies (CRAN)
 
