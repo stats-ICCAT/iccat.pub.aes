@@ -16,7 +16,7 @@ The format of each color table is as follows:
 
 Where the *dataset-dependent code column* name changes with the specific type of reference data (e.g., `CATCH_TYPE_CODE` for catch types, or `GEAR_GROUP_CODE` for gear groups). 
 
-Also, the *alphanumeric code* value depends on the valid entries expected for the specific type of reference date, while `FILL` and `COLOR` values correspond to the RGB colors for the two different types of aesthetics.
+Also, the *alphanumeric code* value depends on the valid entries expected for the specific type of reference data, while `FILL` and `COLOR` values correspond to the RGB colors for the two different types of aesthetics.
 
 The former (`FILL`) is the color used for the inner part of the bar / area charts, and the latter (`COLOR`) is the color used for the outline of each bar / area chart).
 
@@ -36,24 +36,46 @@ Example of results using the *catch type* aesthetics (from the [T1NC dashboard](
 
 ![image](https://github.com/user-attachments/assets/91fec789-eb57-4e75-b74c-48153d53799a)
 
-# External dependencies (CRAN)
+# External dependencies (CRAN) <a name="external_deps"></a>
++ `data.table`
++ `colorspace`
++ `RColorBrewer`
++ 
+### Installation
+```
+install.packages(c("data.table", "colorspace", "RColorBrewer"))
+```
 
--   data.table
--   colorspace
--   RColorBrewer
+# Internal dependencies <a name="internal_deps"></a>
++ [iccat.pub.data](https://github.com/stats-ICCAT/iccat.pub.data)
 
-# Internal dependencies
+### Installation (straight from GitHub)
+```
+library(devtools)
 
--   [iccat.pub.data](https://github.com/stats-ICCAT/iccat.pub.data)
+install_github("stats-ICCAT/iccat.pub.data")
+```
 
-# How to update
+# How to update (<a name="update_process"></a>
 
 If needed, the ICCAT aesthetics reference data shall be updated by executing the [`initialize_reference_data_aesthetics.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data-raw/initialize_reference_data_aesthetics.R) script (currently stored under the standard [`data-raw`](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data-raw) folder).
 
 After the new reference data have been created and placed under the [`data`](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data) folder, the [`data.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/data.R) script **must** be updated to properly document the additions and ensure these are exported by the library.
 
+# Building the library
+
+Assuming that all [external](#external_deps) and [internal](#internal_deps) dependencies are already installed in the R environment, and that the `devtools` package and [RTools](https://cran.r-project.org/bin/windows/Rtools/) are both available, the building process can be either started within R studio by selecting the Build > Build Source Package menu entry:
+
+![image](https://github.com/user-attachments/assets/f209d8d4-568c-4200-bcf2-fb1fa0e1d2ef)
+
+or by executing the following statement:
+
+`devtools::document(roclets = c('rd', 'collate', 'namespace'))`
+
+> For changes to the color tables to be included in the library at build time, all steps of the [update process](#update_process) shall be executed successfully *before* the build starts.
+
 # Future extensions
 
-+ The *dataset-dependent code column* should instead be made uniform (e.g., `CODE`) across all different reference datasets. This will require changing the code of all other dependent libraries and apps using the default aesthetics. 
-+ The library should be extended to also include reference data colors for the **school types**, which are now embedded in the other libraries / apps that require them. 
++ [ ] the *dataset-dependent code column* should instead be made uniform (e.g., `CODE`) across all different reference datasets. This will require changing the code of all other dependent libraries and apps using the default aesthetics. 
++ [ ] the library should be extended to also include reference data colors for the **school types**, which are now embedded in the other libraries / apps that require them. 
  
