@@ -1,4 +1,4 @@
-# ICCAT public aesthetics library
+# ICCAT `public` `aesthetics` library
 
 A set of reference data constants - and the code to build them - meant for public usage and modeling the core ICCAT aesthetics (i.e., outline and fill colors) for core datasets and categories.
 
