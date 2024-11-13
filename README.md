@@ -40,7 +40,7 @@ Example of results using the *catch type* aesthetics (from the [T1NC dashboard](
 + `data.table`
 + `colorspace`
 + `RColorBrewer`
-+ 
+
 ### Installation
 ```
 install.packages(c("data.table", "colorspace", "RColorBrewer"))
