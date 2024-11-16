@@ -42,7 +42,7 @@ Example of results using the *catch type* aesthetics (from the [T1NC dashboard](
 + `RColorBrewer`
 
 ### Installation
-```
+```R
 install.packages(c("data.table", "colorspace", "RColorBrewer"))
 ```
 
@@ -50,7 +50,7 @@ install.packages(c("data.table", "colorspace", "RColorBrewer"))
 + [iccat.pub.data](https://github.com/stats-ICCAT/iccat.pub.data)
 
 ### Installation (straight from GitHub)
-```
+```R
 library(devtools)
 
 install_github("stats-ICCAT/iccat.pub.data")
