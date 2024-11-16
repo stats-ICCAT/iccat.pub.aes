@@ -22,15 +22,15 @@ The former (`FILL`) is the color used for the inner part of the bar / area chart
 
 Example from the [catch types](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/REF_CATCH_TYPES_COLORS.rda) aesthetics table:
 
-|`CATCH_TYPE_CODE`|`FILL`   |`COLOR`  |
+|CATCH_TYPE_CODE|FILL   |COLOR  |
 |---------------|-------|-------|
-|`C`              |`#66C2A5`|#3C856F|
-|`FA`             |`#B15932`|#B15932|
-|`L`             |`#AB98C8`|#796497|
-|`LF`             |`#C6B18B`|#8B7850|
-|`DD`             |`#E1D83B`|#999203|
-|`DL`             |`#E9C783`|#A98504|
-|`DM`             |`#B3B3B3`|#7A7A7A|
+|`C`              |`#66C2A5`|`#3C856F`|
+|`FA`             |`#B15932`|`#B15932`|
+|`L`             |`#AB98C8`|`#796497`|
+|`LF`             |`#C6B18B`|`#8B7850`|
+|`DD`             |`#E1D83B`|`#999203`|
+|`DL`             |`#E9C783`|`#A98504`|
+|`DM`             |`#B3B3B3`|`#7A7A7A`|
 
 Example of results using the *catch type* aesthetics (from the [T1NC dashboard](https://iccat.shinyapps.io/T1NC_dashboard) app:
 
