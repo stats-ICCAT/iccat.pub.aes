@@ -53,7 +53,7 @@ install.packages(c("data.table", "colorspace", "RColorBrewer"))
 ```R
 library(devtools)
 
-install_github("stats-ICCAT/iccat.pub.data")
+install_github("stats-ICCAT/iccat.pub.data", dependencies = TRUE)
 ```
 
 # How to update <a name="update_process"></a>
