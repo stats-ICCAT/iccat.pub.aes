@@ -70,7 +70,9 @@ Assuming that all [external](#external_deps) and [internal](#internal_deps) depe
 
 or by executing the following statement:
 
-`devtools::document(roclets = c('rd', 'collate', 'namespace'))`
+```R
+devtools::document(roclets = c('rd', 'collate', 'namespace'))
+```
 
 > For changes to the color tables to be included in the library at build time, all steps of the [update process](#update_process) shall be executed successfully *before* the build starts.
 
