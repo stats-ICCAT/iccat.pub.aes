@@ -49,21 +49,25 @@ install.packages(c("data.table", "colorspace", "RColorBrewer"))
 # Internal dependencies <a name="internal_deps"></a>
 + [iccat.pub.data](https://github.com/stats-ICCAT/iccat.pub.data)
 
-### Installation (straight from GitHub)
-```R
-library(devtools)
-
-install_github("stats-ICCAT/iccat.pub.data", dependencies = TRUE)
-```
-
 # How to update <a name="update_process"></a>
-
 ICCAT aesthetics reference data (i.e., all available color tables) can be updated by explicitly executing the [`initialize_reference_data_aesthetics.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data-raw/initialize_reference_data_aesthetics.R) script (currently stored under the standard [`data-raw`](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data-raw) folder).
 
 After the new reference data have been created and placed under the [`data`](https://github.com/stats-ICCAT/iccat.pub.aes/tree/main/data) folder, the [`data.R`](https://github.com/stats-ICCAT/iccat.pub.aes/blob/main/data/data.R) script **must** be updated to properly document the additions and ensure these are exported by the library.
 
-# Building the library
+# Installing the library from GitHub
+1) Ensure that all dependencies (both [external](#external_deps) and [internal](#internal_deps)) are installed
+2) Ensure that the `devtools` package is installed, if not, execute the following:
+```R
+install.packages("devtools")
+```
+3) Once `devtools` is available, execute the following:
+```R
+library(devtools)
 
+install_github("stats-ICCAT/iccat.pub.aes", dependencies = FALSE)
+```
+
+# Building the library
 Assuming that all [external](#external_deps) and [internal](#internal_deps) dependencies are already installed in the R environment, and that the `devtools` package and [RTools](https://cran.r-project.org/bin/windows/Rtools/) are both available, the building process can be either started within R studio by selecting the Build > Build Source Package menu entry:
 
 ![image](https://github.com/user-attachments/assets/f209d8d4-568c-4200-bcf2-fb1fa0e1d2ef)
