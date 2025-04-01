@@ -10,8 +10,9 @@ License: TBD
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    iccat.pub.data,
     data.table,
     colorspace,
     RColorBrewer
+Remotes:
+    stats-ICCAT/iccat.pub.data
 RoxygenNote: 7.3.1
